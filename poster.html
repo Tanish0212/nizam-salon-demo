@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Counter poster · Nizam Al Arfia Gents Saloon</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@400;500;600&family=Noto+Kufi+Arabic:wght@400;500;600&display=swap">
+  <style>
+    /* Printable A5 counter poster. Print with "Margins: none" and "Background graphics" on.
+       QR codes are static inline SVG, generated locally with segno (see README). */
+    @page { size: A5 portrait; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body { background: #D9D3C8; font-family: "Jost", Arial, sans-serif; color: #18243A; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .toolbar { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; padding: 20px 16px 0; }
+    .toolbar button { font: 500 15px "Jost", Arial, sans-serif; padding: 0 24px; min-height: 44px; border: 0; border-radius: 999px; background: #9C552C; color: #fff; cursor: pointer; }
+    .toolbar a { font: 500 15px "Jost", Arial, sans-serif; color: #9C552C; align-self: center; min-height: 44px; display: inline-flex; align-items: center; }
+    .sheet {
+      width: 148mm; height: 210mm; margin: 20px auto 40px; background: #FBF6EE;
+      padding: 13mm 13mm 11mm; display: flex; flex-direction: column; align-items: center; text-align: center;
+      position: relative; box-shadow: 0 20px 60px rgba(0,0,0,.18); overflow: hidden;
+      font-variant-numeric: lining-nums;
+    }
+    .logo { width: 19mm; height: 19mm; position: relative; }
+    .name { margin: 3.5mm 0 0; font: 400 11.5mm/1 "DM Serif Display", Georgia, serif; position: relative; }
+    .sub { margin: 2.2mm 0 0; font: 500 2.7mm "Jost", Arial, sans-serif; letter-spacing: .3em; text-transform: uppercase; color: #9C552C; position: relative; }
+    .ar-name { margin: 1.6mm 0 0; font: 600 4mm/1.4 "Noto Kufi Arabic", sans-serif; color: #9C552C; position: relative; }
+    .rule { width: 18mm; height: 0; border-top: 0.35mm solid #9C552C; margin: 4.5mm 0 4mm; position: relative; }
+    .cta { margin: 0; font: italic 400 6.6mm/1.15 "DM Serif Display", Georgia, serif; color: #9C552C; position: relative; }
+    .cta-ar { margin: 1.6mm 0 0; font: 500 4mm/1.45 "Noto Kufi Arabic", sans-serif; color: #5A6170; position: relative; }
+    .qr-box { margin-top: 4.5mm; padding: 2.5mm; background: #fff; border: 0.3mm solid #E6DAC6; border-radius: 1.5mm; position: relative; }
+    .qr { display: block; width: 54mm; height: 54mm; }
+    .phone { margin: 4.5mm 0 0; font: 500 8.4mm/1 "Jost", Arial, sans-serif; letter-spacing: .02em; font-variant-numeric: lining-nums tabular-nums; position: relative; }
+    .phone-label { margin: 1.6mm 0 0; font: 500 2.6mm "Jost", Arial, sans-serif; letter-spacing: .24em; text-transform: uppercase; color: #9C552C; position: relative; }
+    .foot {
+      margin-top: auto; width: 100%; display: flex; align-items: center; gap: 4mm; text-align: start;
+      padding-top: 3.5mm; border-top: 0.25mm solid #E6DAC6; position: relative;
+    }
+    .qr-small { display: block; width: 19mm; height: 19mm; flex: none; background: #fff; padding: 1.2mm; box-sizing: content-box; border: 0.25mm solid #E6DAC6; }
+    .foot p { margin: 0; font: 400 2.85mm/1.45 "Jost", Arial, sans-serif; color: #5A6170; }
+    .foot b { font-weight: 600; color: #18243A; }
+    .sheet::before { content: ''; position: absolute; inset: 5mm; border: .3mm solid #9C552C; outline: .3mm solid #9C552C; outline-offset: -1.6mm; pointer-events: none; }
+    .sheet { border-top: 5mm solid #18243A; }
+    @media print {
+      body { background: none; }
+      .toolbar { display: none; }
+      .sheet { margin: 0; box-shadow: none; }
+    }
+    @media screen and (max-width: 600px) {
+      .sheet { zoom: .62; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button type="button" onclick="window.print()">Print poster (A5)</button>
+    <a href="./">Back to website</a>
+  </div>
+
+  <main class="sheet">
+
+    <img class="logo" src="images/logo.svg" alt="Nizam Al Arfia Gents Saloon logo">
+    <h1 class="name">Nizam Al Arfia</h1>
+    <p class="sub">Gents Saloon · Mankhool</p>
+    <p class="ar-name" lang="ar" dir="rtl">صالون نظام العرفية للرجال</p>
+    <div class="rule"></div>
+    <p class="cta">Scan to message us on WhatsApp</p>
+    <p class="cta-ar" lang="ar" dir="rtl">امسح الرمز لمراسلتنا عبر واتساب</p>
+    <div class="qr-box">
+      <svg role="img" aria-label="QR code that opens a WhatsApp chat with Nizam Al Arfia Gents Saloon" viewBox="0 0 29 29" class="qr"><path class="qrline" stroke="#18243a" d="M2 2.5h7m2 0h5m2 0h1m1 0h7m-25 1h1m5 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m5 0h1m-25 1h1m1 0h3m1 0h1m1 0h2m2 0h1m1 0h2m2 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m1 0h2m3 0h2m3 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m3 0h2m2 0h1m3 0h1m1 0h3m1 0h1m-25 1h1m5 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m5 0h1m-25 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-17 1h5m1 0h3m-17 1h1m5 0h1m1 0h2m1 0h1m1 0h1m1 0h4m2 0h3m-22 1h1m1 0h2m1 0h2m1 0h1m1 0h1m2 0h2m2 0h5m-22 1h1m1 0h1m1 0h1m1 0h3m1 0h2m1 0h2m1 0h4m1 0h2m-25 1h2m1 0h2m6 0h2m1 0h1m2 0h3m1 0h1m2 0h1m-25 1h2m1 0h2m1 0h1m3 0h3m1 0h1m2 0h2m5 0h1m-25 1h1m1 0h1m1 0h2m2 0h1m3 0h1m1 0h2m3 0h1m3 0h1m-24 1h1m1 0h5m2 0h1m5 0h3m1 0h3m1 0h2m-25 1h1m4 0h1m2 0h1m2 0h2m1 0h2m3 0h1m1 0h2m1 0h1m-25 1h1m1 0h5m1 0h1m4 0h1m2 0h5m1 0h1m-15 1h1m1 0h3m1 0h1m1 0h1m3 0h1m-21 1h7m4 0h4m1 0h1m1 0h1m1 0h1m3 0h1m-25 1h1m5 0h1m2 0h1m2 0h1m3 0h1m3 0h1m-21 1h1m1 0h3m1 0h1m3 0h2m1 0h1m1 0h6m1 0h1m-23 1h1m1 0h3m1 0h1m4 0h2m2 0h4m4 0h2m-25 1h1m1 0h3m1 0h1m2 0h2m10 0h2m1 0h1m-25 1h1m5 0h1m2 0h2m1 0h1m1 0h1m1 0h2m1 0h2m3 0h1m-25 1h7m1 0h2m4 0h1m1 0h1m1 0h1m2 0h1m2 0h1"/></svg>
+    </div>
+    <p class="phone">+971 55 300 1983</p>
+    <p class="phone-label">Phone &amp; WhatsApp</p>
+    <div class="foot">
+      <svg role="img" aria-label="QR code that opens the Nizam Al Arfia Gents Saloon website" viewBox="0 0 37 37" class="qr-small"><path class="qrline" stroke="#18243a" d="M2 2.5h7m1 0h1m1 0h6m1 0h1m1 0h3m1 0h1m2 0h7m-33 1h1m5 0h1m2 0h1m4 0h4m2 0h2m4 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m2 0h1m1 0h4m6 0h4m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m4 0h2m1 0h6m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h4m1 0h1m1 0h2m1 0h3m2 0h1m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m1 0h2m1 0h1m2 0h1m1 0h1m3 0h2m4 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-23 1h1m1 0h5m1 0h1m1 0h2m1 0h2m-24 1h7m1 0h1m1 0h1m2 0h1m1 0h2m1 0h1m7 0h2m3 0h1m-33 1h2m1 0h3m1 0h2m1 0h2m2 0h1m2 0h4m1 0h2m2 0h2m1 0h2m1 0h1m-33 1h1m1 0h2m1 0h3m1 0h2m2 0h1m1 0h3m2 0h3m3 0h1m1 0h1m1 0h1m-31 1h3m7 0h1m5 0h1m2 0h3m2 0h2m2 0h3m1 0h1m-28 1h4m1 0h1m1 0h1m1 0h3m1 0h1m3 0h2m1 0h1m1 0h3m-30 1h3m1 0h2m2 0h3m4 0h2m1 0h4m1 0h1m1 0h2m2 0h1m1 0h2m-27 1h2m1 0h1m2 0h1m1 0h1m2 0h1m2 0h2m3 0h4m2 0h1m-32 1h1m1 0h2m9 0h1m1 0h1m1 0h2m1 0h2m3 0h2m1 0h3m-31 1h3m1 0h3m1 0h1m1 0h2m1 0h2m2 0h2m4 0h3m1 0h2m3 0h1m-31 1h2m4 0h2m2 0h1m3 0h5m1 0h2m1 0h3m1 0h2m1 0h1m-31 1h1m3 0h1m3 0h6m6 0h1m1 0h1m1 0h3m1 0h2m-32 1h2m2 0h2m2 0h1m3 0h1m1 0h3m1 0h6m2 0h6m-31 1h2m3 0h1m2 0h1m3 0h5m1 0h1m2 0h4m1 0h3m1 0h1m-32 1h1m1 0h3m4 0h1m3 0h1m1 0h1m3 0h3m1 0h2m1 0h1m5 0h1m-33 1h1m5 0h2m2 0h1m1 0h1m3 0h1m8 0h1m2 0h4m-32 1h1m1 0h1m2 0h1m2 0h3m1 0h2m1 0h1m2 0h1m1 0h2m6 0h3m1 0h1m-33 1h1m2 0h1m1 0h2m3 0h1m3 0h1m2 0h2m4 0h6m2 0h2m-25 1h1m1 0h4m2 0h4m2 0h1m1 0h1m3 0h1m1 0h3m-33 1h7m1 0h2m2 0h1m1 0h1m1 0h1m5 0h3m1 0h1m1 0h1m1 0h2m-32 1h1m5 0h1m1 0h1m3 0h1m4 0h3m1 0h1m1 0h2m3 0h3m-31 1h1m1 0h3m1 0h1m1 0h3m1 0h3m2 0h2m5 0h6m2 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m2 0h3m5 0h3m1 0h3m2 0h2m2 0h1m-33 1h1m1 0h3m1 0h1m1 0h4m1 0h1m6 0h2m2 0h1m1 0h2m1 0h1m-30 1h1m5 0h1m1 0h1m1 0h1m2 0h1m2 0h3m1 0h3m5 0h1m1 0h1m-31 1h7m2 0h1m1 0h1m2 0h1m4 0h2m2 0h3m1 0h1m3 0h1"/></svg>
+      <p><b>Visit our website</b><br>Shop No. 3, Building 198, Mankhool, Bur Dubai<br>Every day 10 AM – 11:45 PM</p>
+    </div>
+  </main>
+</body>
+</html>
